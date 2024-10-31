@@ -1,0 +1,12 @@
+body {
+    text-align: center;   
+    background-image: url("./img/background.png") no-repeat center center fixed;
+    
+}
+
+#board {
+    background-image: url("./img/background.png");
+    background-size: cover;
+    margin: 0;
+    overflow: hidden;
+}
