@@ -10,3 +10,50 @@ body {
     margin: 0;
     overflow: hidden;
 }
+#score{
+    position: absolute;
+    top: 40px; left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px; color: #000;
+}
+
+#gameOverMessage {
+    position: relative;
+     margin-top: 20px;
+      font-size: 36px;
+       color: #000;
+        text-align: center;
+}
+
+#play-button {
+    position: relative;
+    padding: 10px 20px; 
+    font-size: 18px; 
+    color: white; 
+    background-color: #007bff;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+#play-button:hover {
+    background-color: #0056b3;
+}
+
+#score {
+    position: absolute; 
+    top: 40px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-size: 24px; 
+    color: #000;
+}
+
+#gameOverMessage {
+    position: relative; 
+    margin-top: 20px; 
+    font-size: 36px; 
+    color: #000; 
+    text-align: center;
+}

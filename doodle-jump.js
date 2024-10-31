@@ -64,6 +64,24 @@ window.onload = function() {
     placePlatforms();
     requestAnimationFrame(update);
     document.addEventListener("keydown", moveDoodler);
+
+    const audio = document.getElementById('background-music');
+    const playButton = document.getElementById('play-button');
+
+    let isPlaying = false;
+
+    playButton.addEventListener('click', function() {
+        if (isPlaying) {
+            audio.pause(); 
+            playButton.textContent = 'Play Music';
+        } else {
+            audio.play().catch(error => {
+                console.log("Ошибка воспроизведения музыки: ", error);
+            });
+            playButton.textContent = 'Pause Music';
+        }
+        isPlaying = !isPlaying;
+    });
 }
 
 function update() {

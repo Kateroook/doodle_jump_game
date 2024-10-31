@@ -3,15 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport", content="width=device-width, initial-scale=1.0">
-        <title>Doodle Jump</title>
+        <title>Luffy Jump</title>
         <link rel="stylesheet" href="doodle-jump.css">
         <script src="doodle-jump.js"></script>
     </head>
     <body>
         <canvas id="board"></canvas>
-        <div id="score" style="position: absolute; top: 40px; left: 50%; transform: translateX(-50%); font-size: 24px; color: #000;"></div>
-        <div id="gameOverMessage" style="position: relative; margin-top: 20px; font-size: 36px; color: #000; text-align: center;">
+        <audio id="background-music" autoplay loop>
+            <source src="audio/background-music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div><button id="play-button">Play Music</button></div>
+        
+        <div id="score"></div>
+        <div id="gameOverMessage">
             Game Over!<br>Press "Space" to Restart
         </div>
+
     </body>
 </html>
